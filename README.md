@@ -65,7 +65,7 @@ lottie.splashscreen.show(location?: string, remote?: boolean, width?: number, he
     <preference name="LottieRemoteEnabled" value="true" />
 ```
 
-* `LottieAnimationLocation` (String, default `""`). Location of the Lottie JSON file that should be loaded. Can either be a URL (if `LottieRemoteEnabled` is `true`) or a local JSON file.
+* `LottieAnimationLocation` (String, default `""`). Location of the Lottie JSON file that should be loaded. Can either be a URL (if `LottieRemoteEnabled` is `true`) or a local JSON file (e.g. `www/lottie/error.json`).
 ```xml
     <preference name="LottieAnimationLocation" value="https://www.lottiefiles.com/storage/datafiles/N085wuw0PbkS20l/data.json" />
 ```
