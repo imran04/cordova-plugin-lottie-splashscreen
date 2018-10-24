@@ -21,10 +21,15 @@
 * **Android**
 * **macOS**
 
-#### Prerequisites (iOS only)
+#### Prerequisites
 
+#### iOS
 You need to have [CocoaPods](https://cocoapods.org/) installed because the [lottie-ios](https://cocoapods.org/pods/lottie-ios) is fetched from there.  
 `$ sudo gem install cocoapods`
+
+#### Android
+You need to modify the `target=android-27` to `target=android-28` in `platforms/android/project.properties` because AndroidX support is required.  
+Once Cordova has bumped the target SDK version, this is no longer needed.
 
 ### Installation
 
@@ -45,7 +50,7 @@ This Cordova plugin is meant as a replacement for the stock [cordova-plugin-spla
 
 ##### lottie.splashscreen.hide
 
-This methods hides the current active Lottie splashscreen and destorys the views.
+This methods hides the current active Lottie splashscreen and destroys the views.
 ```js
 lottie.splashscreen.hide()
 ```

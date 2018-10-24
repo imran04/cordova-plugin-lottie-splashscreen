@@ -32,7 +32,13 @@ class LottieSplashScreen : CordovaPlugin() {
                 val context = webView.context
 
                 animationView = LottieAnimationView(context)
-                animationView!!.setAnimation("www/lottie/data.json")
+                val remoteEnabled = preferences.getBoolean("LottieRemoteEnabled", false)
+                val location = preferences.getString("LottieAnimationLocation", "")
+                if (remoteEnabled) {
+                    animationView!!.setAnimationFromUrl(location)
+                } else {
+                    animationView!!.setAnimation(location)
+                }
                 animationView!!.repeatCount = LottieDrawable.INFINITE
 
                 val layoutParams = LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
