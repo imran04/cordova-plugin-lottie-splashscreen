@@ -29,7 +29,7 @@ You need to have [CocoaPods](https://cocoapods.org/) installed because the [lott
 
 #### Android
 You need to modify the `target=android-27` to `target=android-28` in `platforms/android/project.properties` because AndroidX support is required.  
-Once Cordova has bumped the target SDK version, this is no longer needed.
+Once Cordova has bumped the target SDK version, this is no longer needed. (This will be the case with cordova-android v8)
 
 ### Installation
 
